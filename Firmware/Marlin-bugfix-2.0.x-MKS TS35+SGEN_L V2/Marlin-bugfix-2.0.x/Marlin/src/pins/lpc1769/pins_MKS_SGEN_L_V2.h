@@ -189,6 +189,13 @@
   #define E1_SERIAL_TX_PIN                 P1_17
   #define E1_SERIAL_RX_PIN                 P1_17
 
+#ifndef Z2_SERIAL_TX_PIN
+#define Z2_SERIAL_TX_PIN 20
+#endif
+#ifndef Z2_SERIAL_RX_PIN
+#define Z2_SERIAL_RX_PIN 21
+#endif
+
   // Reduce baud rate to improve software serial reliability
   #define TMC_BAUD_RATE 19200
 #endif // HAS_TMC_UART
